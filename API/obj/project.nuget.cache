@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "HVleMMOwmItTx6Fgp8X4S5zw4ySpjHVwi1L7H0r8JXPqS3elk04FtPYbWpsb0aJBQFl7/j7zd5HbDI/JhqkLOQ==",
+  "dgSpecHash": "uKGoW9SPv2M41nEWA633x9Vk2jFx1RrGbyKZVwzJAknmYGiB5Zq2RWDdzFivIwSM2nNyJz6B47UwVhiV0+n3JA==",
   "success": true,
-  "projectFilePath": "C:\\Users\\tarun\\Desktop\\Ambivert\\api\\API.csproj",
+  "projectFilePath": "C:\\Users\\tarun\\Desktop\\Ambivert\\API\\API.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\tarun\\.nuget\\packages\\humanizer.core\\2.8.26\\humanizer.core.2.8.26.nupkg.sha512",
     "C:\\Users\\tarun\\.nuget\\packages\\microsoft.csharp\\4.5.0\\microsoft.csharp.4.5.0.nupkg.sha512",
