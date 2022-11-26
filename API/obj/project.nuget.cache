@@ -1,10 +1,11 @@
 {
   "version": 2,
-  "dgSpecHash": "uKGoW9SPv2M41nEWA633x9Vk2jFx1RrGbyKZVwzJAknmYGiB5Zq2RWDdzFivIwSM2nNyJz6B47UwVhiV0+n3JA==",
+  "dgSpecHash": "VV4MIa+ei+Vr5oXrT+6oKxDCa0p5Ix0Vv9JwP885o1B3gtl2AfxtnSfnTEu0zFWieE8fQ/6oOw99E3jzXp5MBA==",
   "success": true,
   "projectFilePath": "C:\\Users\\tarun\\Desktop\\Ambivert\\API\\API.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\tarun\\.nuget\\packages\\humanizer.core\\2.8.26\\humanizer.core.2.8.26.nupkg.sha512",
+    "C:\\Users\\tarun\\.nuget\\packages\\microsoft.aspnetcore.authentication.jwtbearer\\3.1.7\\microsoft.aspnetcore.authentication.jwtbearer.3.1.7.nupkg.sha512",
     "C:\\Users\\tarun\\.nuget\\packages\\microsoft.csharp\\4.5.0\\microsoft.csharp.4.5.0.nupkg.sha512",
     "C:\\Users\\tarun\\.nuget\\packages\\microsoft.data.sqlclient\\2.1.4\\microsoft.data.sqlclient.2.1.4.nupkg.sha512",
     "C:\\Users\\tarun\\.nuget\\packages\\microsoft.data.sqlclient.sni.runtime\\2.1.1\\microsoft.data.sqlclient.sni.runtime.2.1.1.nupkg.sha512",
