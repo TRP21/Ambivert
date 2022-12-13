@@ -1,0 +1,7 @@
+.navbar-dark .navbar-nav .active>.nav-link, .navbar-dark .navbar-nav .nav-link.active, .navbar-dark .navbar-nav .nav-link.show, .navbar-dark .navbar-nav .show>.nav-link {
+    color: aqua;
+}
+.bg-dark{
+    padding-right: 2%;
+    padding-left: 2%;
+}
