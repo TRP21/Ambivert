@@ -3,7 +3,7 @@ import { BrowserModule } from '@angular/platform-browser';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
-import { HttpClientModule } from '@angular/common/http';
+import { HttpClientModule, HTTP_INTERCEPTORS } from '@angular/common/http';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { NavComponent } from './nav/nav.component'
 import { HomeComponent } from './home/home.component';
@@ -14,6 +14,10 @@ import { ListsComponent } from './lists/lists.component';
 import { MessagesComponent } from './messages/messages.component';
 import { SharedModule } from './_modules/shared.module';
 import { FormsModule } from '@angular/forms';
+import { TestErrorsComponent } from './Errors/test-errors/test-errors.component';
+import { ErrorInterceptor } from './_interceptors/error.interceptor';
+import { ServerErrorComponent } from './errors/server-error/server-error.component';
+import { NotFoundComponent } from './errors/not-found/not-found.component';
 
 @NgModule({
   declarations: [
@@ -25,6 +29,9 @@ import { FormsModule } from '@angular/forms';
     MembersDetailComponent,
     ListsComponent,
     MessagesComponent,
+    TestErrorsComponent,
+    ServerErrorComponent,
+    NotFoundComponent,
   ],
   imports: [
     BrowserModule,
@@ -34,10 +41,10 @@ import { FormsModule } from '@angular/forms';
     FormsModule,
     SharedModule
   ],
-  exports:[
-   
+  exports: [
+
   ],
-  providers: [],
+  providers: [{ provide: HTTP_INTERCEPTORS, useClass: ErrorInterceptor, multi: true }],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
