@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "IN51lYmQj68BxFq2xFZxIooolqWnduglvR1IgAHuQEQ=",
+  "Hash": "Abi9tVUhBQCTE2nyCgFmjw1hSSgV1xjMhpPE4J0A2X4=",
   "Source": "API",
   "BasePath": "_content/API",
   "Mode": "Default",
@@ -10,7 +10,7 @@
     {
       "Name": "API\\wwwroot",
       "Source": "API",
-      "ContentRoot": "C:\\Users\\tarun\\Desktop\\Ambivert\\api\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\tarun\\Desktop\\Ambivert\\API\\wwwroot\\",
       "BasePath": "_content/API",
       "Pattern": "**"
     }

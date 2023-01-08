@@ -1,12 +1,14 @@
 {
   "version": 2,
-  "dgSpecHash": "MM03B+ZSxAYlAgKNh1wkUdJqyKZq995at9WM9bCV4+qHgKFqXU25F9IvejLbXzeaxHQSgmTophG5OtmEdSJ2Kg==",
+  "dgSpecHash": "psTtM8XgY7WdM1NjI/YN4baD5dzfM/YPleikTY3R+gi5NAeWMH4eaJ7KEuEx8lU5ym6Bj5bEUBjSn8414uR9bQ==",
   "success": true,
-  "projectFilePath": "C:\\Users\\tarun\\Desktop\\Ambivert\\api\\API.csproj",
+  "projectFilePath": "C:\\Users\\tarun\\Desktop\\Ambivert\\API\\API.csproj",
   "expectedPackageFiles": [
+    "C:\\Users\\tarun\\.nuget\\packages\\automapper\\12.0.0\\automapper.12.0.0.nupkg.sha512",
+    "C:\\Users\\tarun\\.nuget\\packages\\automapper.extensions.microsoft.dependencyinjection\\12.0.0\\automapper.extensions.microsoft.dependencyinjection.12.0.0.nupkg.sha512",
     "C:\\Users\\tarun\\.nuget\\packages\\humanizer.core\\2.8.26\\humanizer.core.2.8.26.nupkg.sha512",
     "C:\\Users\\tarun\\.nuget\\packages\\microsoft.aspnetcore.authentication.jwtbearer\\3.1.7\\microsoft.aspnetcore.authentication.jwtbearer.3.1.7.nupkg.sha512",
-    "C:\\Users\\tarun\\.nuget\\packages\\microsoft.csharp\\4.5.0\\microsoft.csharp.4.5.0.nupkg.sha512",
+    "C:\\Users\\tarun\\.nuget\\packages\\microsoft.csharp\\4.7.0\\microsoft.csharp.4.7.0.nupkg.sha512",
     "C:\\Users\\tarun\\.nuget\\packages\\microsoft.data.sqlclient\\2.1.4\\microsoft.data.sqlclient.2.1.4.nupkg.sha512",
     "C:\\Users\\tarun\\.nuget\\packages\\microsoft.data.sqlclient.sni.runtime\\2.1.1\\microsoft.data.sqlclient.sni.runtime.2.1.1.nupkg.sha512",
     "C:\\Users\\tarun\\.nuget\\packages\\microsoft.data.sqlite.core\\6.0.10\\microsoft.data.sqlite.core.6.0.10.nupkg.sha512",

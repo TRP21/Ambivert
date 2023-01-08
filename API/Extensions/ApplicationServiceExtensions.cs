@@ -20,7 +20,9 @@ namespace API.Extensions
                options.UseSqlite(_config.GetConnectionString("DefaultConnection"));
 
            });
-
+           services.AddCors();
+           services.AddScoped<ITokenService, TokenService>();
+           services.AddAutoMapper(AppDomain.CurrentDomain.GetAssemblies());
             return services;
         }
     }
