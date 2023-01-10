@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\tarun\\Desktop\\Ambivert\\API\\API.csproj": {}
+    "C:\\Users\\tarun\\Desktop\\Ambivert\\api\\API.csproj": {}
   },
   "projects": {
-    "C:\\Users\\tarun\\Desktop\\Ambivert\\API\\API.csproj": {
+    "C:\\Users\\tarun\\Desktop\\Ambivert\\api\\API.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\tarun\\Desktop\\Ambivert\\API\\API.csproj",
+        "projectUniqueName": "C:\\Users\\tarun\\Desktop\\Ambivert\\api\\API.csproj",
         "projectName": "API",
-        "projectPath": "C:\\Users\\tarun\\Desktop\\Ambivert\\API\\API.csproj",
+        "projectPath": "C:\\Users\\tarun\\Desktop\\Ambivert\\api\\API.csproj",
         "packagesPath": "C:\\Users\\tarun\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\tarun\\Desktop\\Ambivert\\API\\obj\\",
+        "outputPath": "C:\\Users\\tarun\\Desktop\\Ambivert\\api\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\tarun\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -40,39 +40,35 @@
         "net6.0": {
           "targetAlias": "net6.0",
           "dependencies": {
-            "AutoMapper": {
-              "target": "Package",
-              "version": "[12.0.0, )"
-            },
             "AutoMapper.Extensions.Microsoft.DependencyInjection": {
               "target": "Package",
-              "version": "[12.0.0, )"
+              "version": "[11.0.0, )"
             },
             "Microsoft.AspNetCore.Authentication.JwtBearer": {
               "target": "Package",
-              "version": "[3.1.7, )"
+              "version": "[6.0.9, )"
             },
             "Microsoft.EntityFrameworkCore": {
               "target": "Package",
-              "version": "[6.0.10, )"
+              "version": "[6.0.9, )"
             },
             "Microsoft.EntityFrameworkCore.Design": {
               "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
               "suppressParent": "All",
               "target": "Package",
-              "version": "[6.0.10, )"
-            },
-            "Microsoft.EntityFrameworkCore.SqlServer": {
-              "target": "Package",
-              "version": "[6.0.10, )"
+              "version": "[6.0.9, )"
             },
             "Microsoft.EntityFrameworkCore.Sqlite": {
               "target": "Package",
-              "version": "[6.0.10, )"
+              "version": "[6.0.9, )"
             },
             "Swashbuckle.AspNetCore": {
               "target": "Package",
               "version": "[6.2.3, )"
+            },
+            "System.IdentityModel.Tokens.Jwt": {
+              "target": "Package",
+              "version": "[6.23.1, )"
             }
           },
           "imports": [

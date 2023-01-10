@@ -28,14 +28,13 @@ namespace API.Controllers
             _Mapper = mapper;
         }
 
-        [AllowAnonymous]
         [HttpGet]
         public async Task<ActionResult<IEnumerable<MemberDto>>> GetUsers()
         {
             var users = await _context.User.ProjectTo<MemberDto>(_Mapper.ConfigurationProvider).ToListAsync();
             return Ok(users);
         }
-        [AllowAnonymous]
+
         [HttpGet("{username}")]
         public async Task<ActionResult<MemberDto>> GetUser(string username)
         {
