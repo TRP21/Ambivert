@@ -23,6 +23,7 @@
     "bootstrap": "^4.5.3",
     "bootswatch": "^5.2.3",
     "ngx-bootstrap": "^7.1.2",
+    "ngx-spinner": "^13.1.1",
     "ngx-toaster": "^1.0.1",
     "ngx-toastr": "^14.3.0",
     "rxjs": "~6.6.0",
