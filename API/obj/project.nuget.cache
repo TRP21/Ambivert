@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "AR9jraM2dnNDQiMZPJN7pIzeBZvbKLUG9VAngzirWxgh7Peky2e5VHCbVqMAXPoLShJLOXP23Sn6Hu1KLTY8kA==",
+  "dgSpecHash": "AXRZHHYvWuewJTzH9gmICMrCrswb318WVVwhbBimsyra1Ii3diKcZsoLECfLwFGKk4uy/TX3K4GUnjT1dMm6dg==",
   "success": true,
-  "projectFilePath": "C:\\Users\\tarun\\Desktop\\Ambivert\\api\\API.csproj",
+  "projectFilePath": "C:\\Users\\tarun\\Desktop\\Ambivert\\API\\API.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\tarun\\.nuget\\packages\\automapper\\11.0.0\\automapper.11.0.0.nupkg.sha512",
     "C:\\Users\\tarun\\.nuget\\packages\\automapper.extensions.microsoft.dependencyinjection\\11.0.0\\automapper.extensions.microsoft.dependencyinjection.11.0.0.nupkg.sha512",

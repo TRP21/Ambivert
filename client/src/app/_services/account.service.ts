@@ -2,6 +2,7 @@ import { HttpClient } from '@angular/common/http';
 import { Injectable } from '@angular/core';
 import { BehaviorSubject } from 'rxjs';
 import { map } from 'rxjs/operators'
+import { Member } from '../_models/member';
 import { UserModel } from '../_models/usersModel.model';
 
 @Injectable({
@@ -20,12 +21,13 @@ export class AccountService {
       if (user) {
         localStorage.setItem('user', JSON.stringify(user))
         this.currentUserSource.next(user);
+        return response;
       }
     }))
   }
 
-  setCurrentUser(user:UserModel){
- this.currentUserSource.next(user);
+  setCurrentUser(user: UserModel) {
+    this.currentUserSource.next(user);
   }
 
   logOut() {
@@ -33,14 +35,16 @@ export class AccountService {
     this.currentUserSource.next(null);
   }
 
-  register(model:UserModel){
-    return this.http.post<UserModel>(this.baseURl+'account/register',model).pipe(
-      map((user) =>{
-        localStorage.setItem('user',JSON.stringify(user));
+  register(model: UserModel) {
+    return this.http.post<UserModel>(this.baseURl + 'account/register', model).pipe(
+      map((user) => {
+        localStorage.setItem('user', JSON.stringify(user));
         this.currentUserSource.next(user);
       }
-)
+      )
 
     )
   }
+
+ 
 }

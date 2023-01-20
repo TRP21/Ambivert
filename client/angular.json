@@ -27,7 +27,7 @@
               "./node_modules/bootstrap/dist/css/bootstrap.min.css",
               "./node_modules/bootswatch/dist/darkly/bootstrap.css",
               "src/styles.css",
-              "./node_modules/ngx-toastr/toastr.css"
+              "./node_modules/ngx-toastr/toastr.css",
             ],
             "scripts": []
           },
@@ -107,5 +107,7 @@
       }
     }
   },
-  "defaultProject": "client"
+  "cli": {
+    "analytics": "10d27d7b-ad7c-4f25-aa62-ecb63cd05754"
+  }
 }

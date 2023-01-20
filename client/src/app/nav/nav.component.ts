@@ -15,13 +15,14 @@ import { AccountService } from '../_services/account.service';
 export class NavComponent implements OnInit {
   model: any = {};
   constructor(public accountService: AccountService, private router:Router, private toastr:ToastrService) { }
-
+  user:string | undefined;
   ngOnInit(): void {
   }
 
   login() {
     this.accountService.login(this.model).subscribe({
       next: Response => {
+        this.user = Response.username
         this.router.navigateByUrl('/members')
       },
 

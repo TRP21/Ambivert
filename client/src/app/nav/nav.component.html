@@ -11,9 +11,6 @@
             <li class="nav-item">
                 <a class="nav-link"  [routerLink]="['/messages']"routerLinkActive="active">Messages</a>
             </li>
-            <li class="nav-item">
-                <a class="nav-link" style="cursor: pointer;"  (click)="logOut()">LogOut</a>
-            </li>
         </ng-container>
         <li class="nav-item">
             <a class="nav-link" routerLink="/errors">Errors</a>
@@ -23,11 +20,11 @@
     <div *ngIf="accountService.currentUser$ | async" class="btn-group" dropdown>
         <button id="button-animated" dropdownToggle type="button" class="btn btn-primary dropdown-toggle"
                 aria-controls="dropdown-animated">
-          Welcome User <span class="caret"></span>
+          Welcome {{user}} <span class="caret"></span>
         </button>
         <ul id="dropdown-animated" *dropdownMenu class="dropdown-menu mt-2"
             role="menu" aria-labelledby="button-animated">
-          <li role="menuitem"><a class="dropdown-item" href="#">Edit Profile</a></li>
+          <li role="menuitem"><a class="dropdown-item" routerLink="/member/edit">Edit Profile</a></li>
           <li role="menuitem"><a class="dropdown-item" (click)="logOut()"  style="
             cursor: pointer;">LogOut</a>
           </li>
