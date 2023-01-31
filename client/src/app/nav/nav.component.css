@@ -5,3 +5,12 @@
     padding-right: 2%;
     padding-left: 2%;
 }
+img{
+    max-height: 50px;
+    border:2px solid white;
+    display: inline;
+}
+
+btn:hover{
+    color: aqua;
+}

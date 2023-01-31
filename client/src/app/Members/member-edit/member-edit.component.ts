@@ -5,6 +5,7 @@ import { ToastrService } from 'ngx-toastr';
 import { iif } from 'rxjs';
 import { take } from 'rxjs/operators';
 import { Member } from 'src/app/_models/member';
+import { Photo } from 'src/app/_models/Photos';
 import { UserModel } from 'src/app/_models/usersModel.model';
 import { AccountService } from 'src/app/_services/account.service';
 import { MembersService } from 'src/app/_services/members.service';
@@ -15,18 +16,16 @@ import { MembersService } from 'src/app/_services/members.service';
   styleUrls: ['./member-edit.component.css']
 })
 export class MemberEditComponent implements OnInit {
-  @ViewChild('editForm') editForm:NgForm|undefined;
-  @HostListener('window:beforeunload',['$event'])
-  unloadNotification($event:any)
-  {
-   if(this.editForm?.dirty)
-   {
-    $event.returnValue = true;
-   }
-  }   
+  @ViewChild('editForm') editForm: NgForm | undefined;
+  @HostListener('window:beforeunload', ['$event'])
+  unloadNotification($event: any) {
+    if (this.editForm?.dirty) {
+      $event.returnValue = true;
+    }
+  }
   member: Member | undefined;
   user: UserModel | null = null;
-  
+
   constructor(private accountService: AccountService, private memberService: MembersService, private toastr: ToastrService) {
     this.accountService.currentUser$.pipe(take(1)).subscribe({
       next: user => this.user = user
@@ -45,15 +44,18 @@ export class MemberEditComponent implements OnInit {
     })
   }
 
+
+
+
   updateUser() {
-   console.log(this.editForm?.value)
+    console.log(this.editForm?.value)
     this.memberService.updateMember(this.editForm?.value).subscribe(
       {
-        next:_ =>{
+        next: _ => {
           this.toastr.success("User is up dated");
           this.editForm?.reset(this.member)
         },
-        error:error => {
+        error: error => {
           console.log(error)
           this.toastr.error(error.error);
         }

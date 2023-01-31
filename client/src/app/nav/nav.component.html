@@ -1,6 +1,6 @@
 <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark">
     <a class="navbar-brand" routerLink="/">Ambivert</a>
-    <ul class="navbar-nav mr-auto"  style="height: 100%;">
+    <ul class="navbar-nav mr-auto" style="height: 100%;">
         <ng-container *ngIf="accountService.currentUser$ | async">
             <li class="nav-item">
                 <a class="nav-link" [routerLink]="['/members']" routerLinkActive="active">Matches</a>
@@ -9,28 +9,30 @@
                 <a class="nav-link" [routerLink]="['/lists']" routerLinkActive="active">Lists</a>
             </li>
             <li class="nav-item">
-                <a class="nav-link"  [routerLink]="['/messages']"routerLinkActive="active">Messages</a>
+                <a class="nav-link" [routerLink]="['/messages']" routerLinkActive="active">Messages</a>
             </li>
         </ng-container>
         <li class="nav-item">
             <a class="nav-link" routerLink="/errors">Errors</a>
         </li>
-        
+
     </ul>
-    <div *ngIf="accountService.currentUser$ | async" class="btn-group" dropdown>
+    <div *ngIf="(accountService.currentUser$ | async) as user" class="btn-group" dropdown>
+        <img src="{{user.photoUrl || '../../../../assets/user.png'}}" alt="user photo">
         <button id="button-animated" dropdownToggle type="button" class="btn btn-primary dropdown-toggle"
-                aria-controls="dropdown-animated">
-          Welcome {{user}} <span class="caret"></span>
+            style="background-color: transparent; border: 0;" aria-controls="dropdown-animated">Welcome
+            {{user.username}} <span class="caret"></span>
         </button>
-        <ul id="dropdown-animated" *dropdownMenu class="dropdown-menu mt-2"
-            role="menu" aria-labelledby="button-animated">
-          <li role="menuitem"><a class="dropdown-item" routerLink="/member/edit">Edit Profile</a></li>
-          <li role="menuitem"><a class="dropdown-item" (click)="logOut()"  style="
+        <ul id="dropdown-animated" *dropdownMenu class="dropdown-menu mt-2" role="menu"
+            aria-labelledby="button-animated">
+            <li role="menuitem"><a class="dropdown-item" routerLink="/member/edit">Edit Profile</a></li>
+            <li role="menuitem"><a class="dropdown-item" (click)="logOut()" style="
             cursor: pointer;">LogOut</a>
-          </li>
+            </li>
         </ul>
-      </div>
-    <form *ngIf="!(accountService.currentUser$ | async)" #loginForm class="form-inline mt-2 mt-md-0" (ngSubmit)="login()" autocomplete="off" style="margin-left: auto;">
+    </div>
+    <form *ngIf="!(accountService.currentUser$ | async)" #loginForm class="form-inline mt-2 mt-md-0"
+        (ngSubmit)="login()" autocomplete="off" style="margin-left: auto;">
         <input name="username" [(ngModel)]="model.username" class="form-control mr-sm-2" type="text"
             placeholder="UserName">
         <input name="username" [(ngModel)]="model.password" class="form-control mr-sm-2" type="password"

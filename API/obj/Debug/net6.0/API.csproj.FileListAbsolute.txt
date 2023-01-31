@@ -138,3 +138,5 @@ C:\Users\tarun\Desktop\Ambivert-App\API\obj\Debug\net6.0\refint\API.dll
 C:\Users\tarun\Desktop\Ambivert-App\API\obj\Debug\net6.0\API.pdb
 C:\Users\tarun\Desktop\Ambivert-App\API\obj\Debug\net6.0\API.genruntimeconfig.cache
 C:\Users\tarun\Desktop\Ambivert-App\API\obj\Debug\net6.0\ref\API.dll
+C:\Users\tarun\Desktop\Ambivert\API\bin\Debug\net6.0\CloudinaryDotNet.dll
+C:\Users\tarun\Desktop\Ambivert\API\bin\Debug\net6.0\Newtonsoft.Json.dll
