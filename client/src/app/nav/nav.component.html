@@ -21,7 +21,7 @@
         <img src="{{user.photoUrl || '../../../../assets/user.png'}}" alt="user photo">
         <button id="button-animated" dropdownToggle type="button" class="btn btn-primary dropdown-toggle"
             style="background-color: transparent; border: 0;" aria-controls="dropdown-animated">Welcome
-            {{user.username}} <span class="caret"></span>
+            {{user.knownAs}} <span class="caret"></span>
         </button>
         <ul id="dropdown-animated" *dropdownMenu class="dropdown-menu mt-2" role="menu"
             aria-labelledby="button-animated">

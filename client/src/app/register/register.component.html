@@ -1,25 +1,43 @@
-<form #registerForm="ngForm" (ngSubmit)="register()">
-    <h2 class="text-centre text-primary">Sign Up</h2>
+<form [formGroup]="registerForm" (ngSubmit)="registerForm.valid && register()" autocomplete="off" class="mt-5">
+    <h2 class="text-center text-primary">Sign Up</h2>
     <hr>
     <div class="mb-3">
-        <input type="text"
-           class="form-control"
-           name="username"
-           [(ngModel)]="model.username"
-           placeholder="UserName"
-        >
+        <label style="margin-right: 10px;">I am a : </label>
+        <label for="" class="form-check-label m-3">
+            <input type="radio" class="form-check-input" value="male" formControlName="gender">Male
+        </label>
+        <label for="" class="form-check-label m-3">
+            <input type="radio" class="form-check-input" value="female" formControlName="gender">Female
+        </label>
     </div>
-    <div class="mb-3">
-        <input type="password"
-           class="form-control"
-           name="password"
-           [(ngModel)]="model.password"
-           placeholder="Password"
-        >
+    <app-text-input [formControl]="$any(registerForm.controls['username'])" [label]="'Username'"></app-text-input>
+
+    <app-text-input [formControl]="$any(registerForm.controls['knownAs'])" [label]="'Known As'"></app-text-input>
+
+    <app-date-picker [formControl]="$any(registerForm.controls['dateOfBirth'])" [maxDate]="maxDate"
+        [label]="'Date Of Birth'"></app-date-picker>
+
+    <app-text-input [formControl]="$any(registerForm.controls['city'])" [label]="'City'"></app-text-input>
+
+    <app-text-input [formControl]="$any(registerForm.controls['country'])" [label]="'Country'"></app-text-input>
+
+    <app-text-input [formControl]="$any(registerForm.controls['password'])" [label]="'Password'"
+        [type]="'password'"></app-text-input>
+
+    <app-text-input [formControl]="$any(registerForm.controls['confirnPassword'])" [label]="'Confirn password'"
+        [type]="'password'"></app-text-input>
+
+    <div class="row" *ngIf="listOfErrors">
+        <ul class="text-danger">
+            <li *ngFor="let error of listOfErrors">
+                {{error}}
+            </li>
+        </ul>
     </div>
-    <div class="text-centre"> 
-        <button class="btn btn-success mr-2" type="submit">Register</button>
-        <button class="btn btn-success" type="button" (click)="cancel()">Cancel</button>    
+
+    <div class="text-centre">
+        <button [disabled]="registerForm.invalid" class="btn btn-success mr-2" type="submit">Register</button>
+        <button class="btn btn-success" type="button" (click)="cancel()">Cancel</button>
     </div>
-    
+
 </form>
